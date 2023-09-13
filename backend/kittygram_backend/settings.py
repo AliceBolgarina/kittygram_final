@@ -13,7 +13,7 @@ DEBUG = (os.getenv('DEBUG', 'False') == 'True')
 
 ALLOWED_HOSTS = ['51.250.17.90', '127.0.0.1', 'localhost', 'alicehw.sytes.net']
 
-#os.getenv('ALLOWED_HOSTS').split(',')
+# os.getenv('ALLOWED_HOSTS').split(',')
 
 INSTALLED_APPS = [
     'django.contrib.admin',
