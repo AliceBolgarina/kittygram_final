@@ -15,7 +15,6 @@ ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS').split(', ')
 
 # os.getenv('ALLOWED_HOSTS').split(',')
 # try
-# создаю видимость
 
 INSTALLED_APPS = [
     'django.contrib.admin',
