@@ -4,6 +4,8 @@ WORKDIR /app
 
 RUN pip install gunicorn==20.1.0
 
+RUN pip install python-dotenv==1.0.0
+
 COPY requirements.txt .
 
 RUN pip install -r requirements.txt --no-cache-dir
