@@ -14,6 +14,7 @@ DEBUG = False
 ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS').split(',')
 
 # os.getenv('ALLOWED_HOSTS').split(',')
+# try
 
 INSTALLED_APPS = [
     'django.contrib.admin',
