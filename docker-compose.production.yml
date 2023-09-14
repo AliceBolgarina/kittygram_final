@@ -19,8 +19,7 @@ services:
       - static:/backend_static/
       - media:/media/
     depends_on:
-      db:
-        condition: service_healthy
+      - db
 
   frontend:
     env_file: .env
@@ -38,5 +37,4 @@ services:
       - static:/static/
       - media:/media/
     depends_on:
-      - backend
       - frontend
