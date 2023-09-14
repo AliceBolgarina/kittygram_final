@@ -17,16 +17,19 @@ services:
   backend:
     image: alicebee/kittygram_backend
     env_file: .env
+    depends_on:
+      - db
     volumes:
       - static:/backend_static/
       - media:/media/
-    depends_on:
-      - db
+    
 
   frontend:
     env_file: .env
     image: alicebee/kittygram_frontend
     command: cp -r /app/build/. /frontend_static/
+    depends_on:
+      - backend
     volumes:
       - static:/frontend_static/
 
